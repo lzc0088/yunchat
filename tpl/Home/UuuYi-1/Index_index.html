@@ -1,0 +1,432 @@
+<!doctype html>
+<html lang="zh">
+
+<head>
+  <meta charset="UTF-8">
+  <title>{uuuyi::C('site_title')}</title>
+  <link rel="stylesheet" href="{uuuyi::RES}/css/comm.css">
+  <link rel="stylesheet" href="{uuuyi::RES}/css/index.css">
+    <link href="{uuuyi::RES}/css/login.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript">
+    function logoa(){
+        document.getElementById('Login').style.display='none';
+        document.getElementById('Registration').style.display="block";
+    }
+    function resa(){
+        document.getElementById('Login').style.display='block';
+        document.getElementById('Registration').style.display="none";
+    }
+    </script>
+</head>
+
+<body>
+  <div class="header-box" id="herder">
+    <div id="top">
+      <img src="{uuuyi::RES}/images/logo.png">
+      <a href="#index" target="_self"  >首页</a>
+      <a href="#Features" target="_self">功能介绍</a>
+      <!--<a href="#PricePackage" target="_self">价格套餐</a>-->
+      <a href="#Platform" target="_self">平台优势</a>
+      <!--<a href="{uuuyi::U('Home/Index/help')}">帮助中心</a>-->
+	  <a href="#PricePackage" target="_self">购买咨询</a>
+      <a href="#AboutUs" target="_self">关于我们</a>
+	  <a href="<if condition="$_SESSION[uid]==false">#Management<else/>{uuuyi::U('User/Index/index')}</if>" target="_self">管理中心</a>
+      <a class="line"></a>    
+    </div>
+</div>
+  <div class="wrap-box">
+    <div class="main-box" id="scroll-box">
+      <div class="box step-1" id="step-1">
+      <a name="index"></a>
+        <div class="step-bg">
+          <img src="{uuuyi::RES}/images/bg_1.jpg" alt="">
+          <canvas id="snowfall" class="snowfall"></canvas>
+        </div>
+        <div class="step-box">
+          <div class="phone-box">
+            <div class="phone-top"></div>
+            <div class="phone-center">
+              <span class="phone"></span>
+              <span class="icons">
+                <img src="{uuuyi::RES}/images/icon.png" alt="">
+              </span>
+            </div>
+            <div class="phone-bottom"></div>
+          </div>
+          <div class="begin-box">
+            <div class="begin-title">进入微信时代</div>
+            <a href="#Management" target="_self" class="begin-btn">开始体验</a>
+          </div>
+        </div>
+      </div>
+      <div class="box step-2">
+      <a name="Features"></a>
+        <div class="step-bg">
+          <img src="{uuuyi::RES}/images/bg_2.jpg" alt="">
+        </div>
+        <div class="step-box">
+          <div class="feature_1">
+            <div class="title">
+              <h2>1</h2>
+              <h3>基本功能</h3>
+              <h3>贴心好用</h3>
+            </div>
+            <div class="content clearfix">
+              <img src="{uuuyi::RES}/images/feature_1.png" alt="">
+              <ul>
+                <li>
+                  <a href="#" title="天气查询">天气查询</a>
+                </li>
+                <li>
+                  <a href="#" title="快递查询">快递查询</a>
+                </li>
+                <li>
+                  <a href="#" title="火车查询">火车查询</a>
+                </li>
+                <li>
+                  <a href="#" title="公交查询">公交查询</a>
+                </li>
+                <li>
+                  <a href="#" title="身份证查询">身份证查询</a>
+                </li>
+                <li>
+                  <a href="#" title="手机归属地查询">手机归属地查询</a>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <a href="#" title="陪聊">陪聊</a>
+                </li>
+                <li>
+                  <a href="#" title="翻译">翻译</a>
+                </li>
+                <li>
+                  <a href="#" title="音乐查询">音乐查询</a>
+                </li>
+                <li>
+                  <a href="#" title="姓名算命">姓名算命</a>
+                </li>
+                <li>
+                  <a href="#" title="健康指数查询">健康指数查询</a>
+                </li>
+                <li>
+                  <a href="#" title="周边信息查询">周边信息查询</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="feature_2">
+            <div class="title">
+              <h3>强大无忧</h3>
+              <h3>特色功能</h3>
+              <h2>2</h2>
+            </div>
+            <div class="content clearfix">
+              <img src="{uuuyi::RES}/images/feature_2.png" alt="">
+              <ul>
+                <li>
+                  <a href="#" title="摇一摇">摇一摇</a>
+                </li>
+                <li>
+                  <a href="#" title="微信墙-微信大屏幕">微信墙</a>
+                </li>
+                <li>
+                  <a href="#" title="微贺卡">微贺卡</a>
+                </li>
+                <li>
+                  <a href="#" title="天气查询">G微站</a>
+                </li>
+                <li>
+                  <a href="#" title="快递查询">大转盘</a>
+                </li>
+                <li>
+                  <a href="#" title="火车查询">优惠券</a>
+                </li>
+                <li>
+                  <a href="#" title="公交查询">刮刮卡</a>
+                </li>
+                <li>
+                  <a href="#" title="身份证查询">砸金蛋</a>
+                </li>
+                <li>
+                  <a href="#" title="手机归属地查询">微喜帖</a>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <a href="#" title="微房产">微房产</a>
+                </li>
+                <li>
+                  <a href="#" title="微医疗">微医疗</a>
+                </li>
+                <li>
+                  <a href="#" title="微酒店">微酒店</a>
+                </li>
+                <li>
+                  <a href="#" title="天气查询">微调研</a>
+                </li>
+                <li>
+                  <a href="#" title="快递查询">微商城</a>
+                </li>
+                <li>
+                  <a href="#" title="火车查询">微团购</a>
+                </li>
+                <li>
+                  <a href="#" title="公交查询">无线订餐</a>
+                </li>
+                <li>
+                  <a href="#" title="身份证查询">会员卡</a>
+                </li>
+                <li>
+                  <a href="#" title="手机归属地查询">360全景</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+     <div class="box step-3">
+        <a name="PricePackage"></a>
+        <div class="step-bg">
+          <img src="{uuuyi::RES}/images/bg_3.jpg" alt="">
+        </div>
+        <div class="step-box">
+          <div class="price-title"></div>
+          <div class="price-box">
+            <div class="price price-free">
+              <div class="title">
+                <span class="price-name">价格</span>
+                <h2>0</h2>
+                <span class="price-unit">元/年</span>
+              </div>
+              <div class="content">
+                <ul>
+                  <li>
+                    <i></i>暂无供应</li>
+                  <li>
+                </ul>
+              </div>
+              <a href="#" class="buy-btn">立即购买</a>
+            </div>
+            <div class="price price-public">
+              <div class="title">
+                <span class="price-name">价格</span>
+                <h2>500</h2>
+                <span class="price-unit">元/套</span>
+              </div>
+              <div class="content">
+                <ul>
+                  <li>
+                    <i></i>测试地址:<br>http://dkjingyou.gotoip1.com</li>
+                  <li>
+                    <i></i>测试账号：test</li>
+                  <li>
+                    <i></i>测试密码:123456</li>
+                  <li>
+                    <i></i>售后，免费提供更新服务</li>
+                </ul>
+              </div>
+              <a href="http://item.taobao.com/item.htm?id=36288782702" class="buy-btn" target="_blank">立即购买</a>
+            </div>
+			 <div class="price price-advance">
+              <div class="title">
+                <span class="price-name">价格</span>
+                <h2>1200</h2>
+                <span class="price-unit">元/套</span>
+              </div>
+              <div class="content">
+				<ul>
+                  <li>
+                    <i></i>测试地址:<br>http://dkjingyou.gotoip1.com</li>
+                  <li>
+                    <i></i>测试账号：1212</li>
+                  <li>
+                    <i></i>测试密码:123456</li>
+                  <li>
+                    <i></i>软件开源但是仅限本人使用</li>
+                  <li>
+                    <i></i>包安装售后，终身免费免费升级</li>
+
+                </ul>
+              </div>
+              <a href="http://item.taobao.com/item.htm?id=36288782702" class="buy-btn" target="_blank">立即购买</a>
+            </div>
+          </div>
+        </div>
+      </div>-->
+      <div class="box step-4">
+        <a name="Platform"></a>
+        <div class="step-bg">
+          <img src="{uuuyi::RES}/images/bg_4.jpg" alt="">
+        </div>
+        <div class="step-box">
+          <div class="advantage-title"></div>
+          <div class="advantage-content">
+            <div class="advantage selected-1">
+              <a href="javascript:;" class="advantage-1">
+                <i class="line-left"></i>
+              </a>
+              <a href="javascript:;" class="advantage-2">
+                <i class="line-right"></i>
+              </a>
+              <a href="javascript:;" class="advantage-3">
+                <i class="line-middle"></i>
+              </a>
+              <a href="javascript:;" class="advantage-4">
+                <i class="line-middle"></i>
+              </a>
+              <a href="javascript:;" class="advantage-5">
+                <i class="line-right"></i>
+              </a>
+              <a href="javascript:;" class="advantage-6">
+                <i class="line-left"></i>
+              </a>
+            </div>
+            <div class="advantage-list">
+              <div class="advantage-box-1 advantage-selected">
+                <h2>
+                  <i class="selected">1</i>自主研发
+                </h2>
+                <span class="line"></span>
+                <h3>所有功能自主研发，提供整套源码。</h3>
+              </div>
+              <div class="advantage-box-2">
+                <h2>
+                  <i>2</i>功能领先
+                </h2>
+                <span class="line"></span>
+                <h3>紧跟微信和市场趋势，引领需求。</h3>
+              </div>
+              <div class="advantage-box-3">
+                <h2>
+                  <i>3</i>定期更新
+                </h2>
+                <span class="line"></span>
+                <h3>整套研发规划，定期更新升级。</h3>
+              </div>
+              <div class="advantage-box-4">
+                <h2>
+                  <i>4</i>高性价比
+                </h2>
+                <span class="line"></span>
+                <h3>惠及大众，同等功能下价格极富竞争力。</h3>
+              </div>
+              <div class="advantage-box-5">
+                <h2>
+                  <i>5</i>管家服务
+                </h2>
+                <span class="line"></span>
+                <h3>一对一专业支持，保姆式贴心服务。</h3>
+              </div>
+              <div class="advantage-box-6">
+                <h2>
+                  <i>6</i>创富利器
+                </h2>
+                <span class="line"></span>
+                <h3>智能提升企业营销管理，拓展客户好帮手。</h3>
+              </div>
+            </div>
+            <a href="#Management" target="_self" class="experience-btn">马上体验</a>
+          </div>
+        </div>
+      </div>
+        
+      <div class="box step-5">
+        <a name="Management"></a>
+        <div class="main-content">
+        <div style="height:45px;width:100%;" ></div>
+          <div class="main1000"> <img class="phone2" alt="phone2" src="{uuuyi::RES}/images/phone2.png" id="zll" style="top:120px;display: inline;">
+            <p class="txt1"><img src="{uuuyi::RES}/images/login_huanyin.png" width="251" height="109" /></p>
+            <div class="login" id="Login" style="display:none;" >
+                <div class="top">
+                    <ul>
+                        <li><a class="logo" ><img src="{uuuyi::RES}/images/login_top_r.png"/>注册</a></li>
+                        <li Onclick="logoa();" ><a><img src="{uuuyi::RES}/images/login_top_l.png" />登录</a></li>
+                        <li></li>
+                    </ul>
+                    <p><img src="{uuuyi::RES}/images/login_ico.jpg" />您好，如果您还不是会员，请先注册</p>
+					<form action="{uuuyi::U('Users/checkreg')}" method="post" >
+                    <dl>
+                        <dt>用 户 名 ：</dt>
+                        <dd>
+							<input class="text" required value="请输入用户名" onClick="if(this.value=='请输入用户名'){this.value=''}" onBlur="if(this.value==''){this.value='请输入用户名'}" type="text" name="username">
+						</dd>
+                        <dt>密　　码：</dt>
+                        <dd>
+							<input class="text" type="password" name="password">
+						</dd>
+                        <dt>确认密码：</dt>
+                        <dd>
+							<input class="text" type="password" name="repassword">
+						</dd>
+						<dt>邮　　箱：</dt>
+                        <dd>
+							<input class="text" type="text" name="email" value="请输入电子邮箱" onClick="if(this.value=='请输入电子邮箱'){this.value=''}" onBlur="if(this.value==''){this.value='请输入电子邮箱'}">
+						</dd>
+                    </dl>
+					<input class="buttom" type="submit" value="注册">
+					</form>
+                </div>
+            </div>
+            <div class="login" id="Registration" style="height:260px;" >
+                <div class="top" >
+                    <ul>
+                        <li Onclick="resa();" ><a><img src="{uuuyi::RES}/images/login_top_r.png" />注册</a></li>
+                        <li><a class="logo" ><img src="{uuuyi::RES}/images/login_top_l.png" />登录</a></li>
+                        <li></li>
+                    </ul>
+                    <p><img src="{uuuyi::RES}/images/login_ico.jpg" />您好，尊贵的会员，欢迎登陆</p>
+					<form action="{uuuyi::U('Users/checklogin')}" method="post" >
+                    <dl >
+                        <dt>用 户 名 ：</dt>
+                        <dd><input class="text" type="text" name="username"></dd>
+                        <dt>密　　码：</dt>
+                        <dd><input class="text" type="password" name="password"></dd>
+                    </dl>
+					<input class="buttom" type="submit" value="登录">
+					</form>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        
+      <div class="box step-6">
+        <a name="AboutUs"></a>
+        <div class="step-bg">
+          <img src="{uuuyi::RES}/images/bg_5.jpg" alt="">
+        </div>
+        <div class="step-box">
+          <div class="contact-title"></div>
+          <div class="contact-content clearfix">
+            <div class="fl"style="width:238xp;">
+              tel:400-666-6666
+              <img src="{uuuyi::RES}/images/qr_code.png" alt="二维码">
+              <br>请扫描二维码更详细地了解我们…
+            </div>
+            <div class="fr">
+              <div class="qq">
+                <span>在线客服QQ</span>
+                <a href="tencent://message/?uin=2232905302&&Site=500.2s6s.com&&Menu=yes" title="客服1"><img src="{uuuyi::RES}/images/qq_1.png" alt="客服1"></a>
+                <a href="tencent://message/?uin=2232905302&&Site=500.2s6s.com&&Menu=yes" title="客服2"><img src="{uuuyi::RES}/images/qq_2.png" alt="客服2"></a>
+                <a href="tencent://message/?uin=2232905302&&Site=500.2s6s.com&&Menu=yes" title="客服3"><img src="{uuuyi::RES}/images/qq_3.png" alt="客服3"></a>
+              </div>
+              <div class="about-us">
+                <h2>关于我们</h2>
+                <p>微云是上海地区拥有独立技术导向的创业团队，专门针对微信公众号提供第三方开发定制服务。我们已经开发了数十项深受市场欢迎的功能，如：微网站、微商城、微团购、无线订餐、会员卡、大转盘、优惠券、刮刮卡、砸金蛋、微喜帖360全景，等等。我们将继续紧跟微信接口开放步骤和市场需求，开发更多领先的实用功能。我们慷慨地将所有研发成果和客户共享，收费合理，服务尽心。微云还很年轻，还有很多不足，我们会持续改善。有您的支持关爱，微云会一直在路上辛勤耕耘、努力奔跑！</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="{uuuyi::RES}/js/jquery-1.10.2.min.js"></script>
+  <script src="{uuuyi::RES}/js/snow.js"></script>
+  <script src="{uuuyi::RES}/js/rectangleEmitter.js"></script>
+  <script src="{uuuyi::RES}/js/index.js"></script>
+  
+</body>
+
+</html>

@@ -1,0 +1,719 @@
+/*---- common css start ----*/
+#herder {
+  width: auto;
+  height: 53px;
+  margin-bottom: 30px;
+  background-image: url(../images/Nav_bg.png);
+  background-repeat: repeat-x;
+}
+#top {
+  width: 1210px;
+  height: 55px;
+  margin: 0px auto;
+  padding: 0px;
+}
+#top img {
+  border: 0px;
+  float: left;
+  margin: 11px 40px 11px 10px;
+}
+#top a {
+  width: auto;
+  float: left;
+  color: #eee;
+  height: 25px;
+  padding: 14px 24px;
+  line-height: 25px;
+  font-size: 16px;
+  background-image: url(images/Nav_Line.png);
+  background-repeat: no-repeat;
+  background-position: left;
+}
+#top a:hover {
+  color: #fff;
+  background: #242424;
+  background-image: url(images/Nav_Line.png);
+  background-repeat: no-repeat;
+  background-position: left;
+}
+.title-a{
+  color: #fff;
+  background: #242424;
+  background-image: url(images/Nav_Line.png);
+  background-repeat: no-repeat;
+  background-position: left;
+}
+#top a.line {
+  background-image: url(images/Nav_Line.png);
+  background-repeat: no-repeat;
+  width: 2px;
+  height: 51px;
+  padding: 0px;
+}
+#top a.a {
+  display: block;
+  width: 135px;
+  height: 30px;
+  color: #E9E9E9;
+  float: right;
+  margin: 12px 15px 12px 0px;
+  text-align: center;
+  line-height: 30px;
+  background: #474646;
+  padding: 0px;
+  border: 1px solid #242424;
+}
+#top a.a1 {
+  background: #999;
+  color: #333;
+  display: none;
+  width: 135px;
+  height: 30px;
+  float: right;
+  margin: 12px 15px 12px 0px;
+  text-align: center;
+  line-height: 30px;
+  padding: 0px;
+  border: 1px solid #242424;
+}
+#top a span {
+  color: #da3610;
+  font-weight: bold;
+}
+.wrap-box {
+	top: 53px;
+	bottom: 0;
+	width: 100%;
+	position: fixed;
+}
+.main-box {
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+}
+.box {
+	width: 100%;
+	height: 700px;
+	position: relative;
+	overflow: hidden;
+}
+.step-box {
+	width: 800px;
+	height: 100%;
+	margin: auto;
+	position: relative;
+}
+.step-bg {
+	top: 0;
+	width: 100%;
+	position: absolute;
+}
+.step-bg img {
+	width: 100%;
+	height: 100%;
+}
+/*---- common css end ----*/
+
+/*---- setp-1 css start ----*/
+
+.snowfall {
+	top: 0;
+	left: 0;
+	position:absolute;
+}
+.phone-box {
+	top: 50px;
+	left: -140px;
+	width: 572px;
+	position: absolute;
+	overflow: hidden;
+}
+.phone-top {
+	height: 116px;
+	background: url(../images/phone_top.png) 0 0 no-repeat;
+}
+.phone-center {
+	height: 206px;
+	background: url(../images/phone_center.png) 0 0 no-repeat;
+	position: relative;
+}
+.phone-bottom {
+	height: 80px;
+	background: url(../images/phone_bottom.png) 0 0 no-repeat;
+	position: relative;
+	overflow: hidden;
+}
+.icons {
+	top: -85px;
+	left: 90px;
+	width: 411px;
+	height: 233px;
+	display: block;
+	position: absolute;
+}
+.icons:hover {
+	-webkit-animation-name: pulse-out;
+	animation-name: pulse-out;
+}
+.phone {
+	top: -50px;
+	left: 215px;
+	width: 131px;
+	height: 258px;
+	background: url(../images/phone.png) 0 0 no-repeat;
+	display: block;
+	position: absolute;
+}
+.begin-box {
+	line-height: 0;
+	font-size: 0;
+}
+.begin-title {
+	top: 180px;
+	right: -90px;
+	width: 380px;
+	height: 120px;
+	background: url(../images/begin_title.png) 0 0 no-repeat;
+	position: absolute;
+}
+.begin-btn {
+	top: 300px;
+	left: 515px;
+	width: 163px;
+	height: 44px;
+	margin-top: 20px;
+	background: url(../images/begin_btn.png) 0 0 no-repeat;
+	display: block;
+	position: absolute;
+	opacity: 0.6;
+	-webkit-animation-name: 'opt';
+	-webkit-animation-duration: 2s;
+	-webkit-animation-timing-function: ease;
+	-webkit-animation-iteration-count: infinite;
+}
+@-webkit-keyframes 'opt' {
+	from {
+		opacity: .6;
+	}
+	50% {
+		opacity: 1;
+	}
+	to {
+		opacity: .6
+	}
+}
+/*---- setp-1 css end ----*/
+
+/*---- setp-2 css start ----*/
+
+.feature_1 {
+	width: 800px;
+	height: 270px;
+	margin-top: 20px;
+	background: url(../images/feature_bg_1.png) 0 0 no-repeat;
+	position: relative;
+}
+.feature_1 .title {
+	height: 25px;
+	padding-top: 5px;
+	padding-left: 5px;
+	overflow: hidden;
+}
+.feature_1 .title h2 {
+	float: left;
+	margin-right: 15px;
+	line-height: 30px;
+	font-size: 22px;
+	font-family: '楷体';
+}
+.feature_1 .title h3 {
+	float: left;
+	margin-right: 15px;
+	line-height: 30px;
+	font-size: 16px;
+	font-weight: normal;
+}
+.feature_1 .content {
+	padding-top: 38px;
+	padding-left: 300px;
+}
+.feature_1 img {
+	top: 55px;
+	left: 0;
+	position: absolute;
+}
+.feature_2 {
+	width: 800px;
+	height: 270px;
+	margin-top: 20px;
+	background: url(../images/feature_bg_2.png) 0 0 no-repeat;
+	position: relative;
+}
+.feature_2 .title {
+	height: 25px;
+	padding-top: 5px;
+	padding-right: 80px;
+	overflow: hidden;
+}
+.feature_2 .title h2 {
+	float: right;
+	margin-right: 15px;
+	line-height: 30px;
+	font-size: 22px;
+	font-family: '楷体';
+}
+.feature_2 .title h3 {
+	float: right;
+	margin-right: 15px;
+	line-height: 30px;
+	font-size: 16px;
+	font-weight: normal;
+}
+.feature_2 .content {
+	padding-top: 36px;
+	padding-left: 150px;
+}
+.feature_2 img {
+	top: 55px;
+	right: 0;
+	position: absolute;
+}
+.step-2 ul {
+	float: left;
+	margin-right: 80px;
+}
+.step-2 li {
+	padding-left: 30px;
+	background: url(../images/point.png) 0 8px no-repeat;
+	line-height: 29px;
+}
+.step-2 li a {
+	font-size: 16px;
+}
+/*---- setp-2 css end ----*/
+
+/*---- setp-3 css start ----*/
+
+.price-title {
+	height: 100px;
+	background: url(../images/price_top.png) 0 8px no-repeat;
+}
+.price-box {
+	width: 820px;
+	padding: 0 65px;
+}
+.price-box .price {
+	float: left;
+	width: 218px;
+	height: 373px;
+	margin-right: 13px;
+	padding-top: 40px;
+	position: relative;
+}
+.price-box .price a {
+	bottom: 24px;
+	left: 63px;
+	width: 93px;
+	height: 28px;
+	background: url(../images/buy_btn.jpg) 0 0 no-repeat;
+	line-height: 0;
+	font-size: 0;
+	display: block;
+	position: absolute;
+}
+.price-box .price .title {
+	height: 40px;
+	padding: 10px 0;
+	color: #666;
+	text-align: center;
+}
+.price-box .price .title h2 {
+	font-size: 38px;
+	display: inline;
+}
+.price-box .price-name {
+	top: 10px;
+	font-size: 15px;
+	vertical-align: top;
+	position: relative;
+}
+.price-box .price-unit {
+	bottom: 10px;
+	vertical-align: bottom;
+	position: relative;
+}
+.price-box .price .content {
+	padding: 20px 10px;
+}
+.price-box .price .content li {
+	padding-left: 20px;
+	line-height: 30px;
+	font-size: 17px;
+	position: relative;
+}
+.price-box .price .content li i {
+	top: 9px;
+	left: 0;
+	width: 11px;
+	height: 10px;
+	background: url(../images/arrow.png) 0 0 no-repeat;
+	display: block;
+	position: absolute;
+}
+.price-free {
+	background: url(../images/price_free.png) 0 0 no-repeat;
+}
+.price-free .title h2,
+.price-free .content li {
+	color: #7cb137;
+}
+.price-advance {
+	background: url(../images/price_advance.png) 0 0 no-repeat;
+}
+.price-advance .title h2,
+.price-advance .content li {
+	color: #e2c22f;
+}
+.price-public {
+	background: url(../images/price_public.png) 0 0 no-repeat;
+}
+.price-public .title h2,
+.price-public .content li {
+	color: #559be1;
+}
+/*---- setp-3 css end ----*/
+
+/*---- setp-4 css start ----*/
+
+.advantage-title {
+	height: 60px;
+	background: url(../images/experience_title.png) center 0 no-repeat;
+}
+.advantage-content {
+	height: 320px;
+	padding-top: 50px;
+	background: url(../images/advantage_bg.png) 0 50px no-repeat;
+	position: relative;
+}
+.advantage {
+	top: 109px;
+	left: 291px;
+	width: 205px;
+	height: 205px;
+	position: absolute;
+}
+.line-left {
+	/*width 66px*/
+	/*height 39px*/
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 0;
+	background: url(../images/line_left.png) 0 0 no-repeat;
+	display: block;
+	position: absolute;
+}
+.line-middle {
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 0;
+	background: url(../images/line_middle.png) 0 0 no-repeat;
+	display: block;
+	position: absolute;
+}
+.line-right {
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 0;
+	background: url(../images/line_right.png) 0 0 no-repeat;
+	display: block;
+	position: absolute;
+}
+.selected-1 {
+	background: url(../images/advantage_1.png) 0 0 no-repeat;
+}
+.advantage-1 i {
+	top: -18px;
+	left: -36px;
+}
+.selected-2 {
+	background: url(../images/advantage_2.png) 0 0 no-repeat;
+}
+.advantage-2 i {
+	top: -20px;
+	left: 54px;
+}
+.selected-3 {
+	background: url(../images/advantage_3.png) 0 0 no-repeat;
+}
+.advantage-3 i {
+	top: 32px;
+	left: -65px;
+}
+.selected-4 {
+	background: url(../images/advantage_4.png) 0 0 no-repeat;
+}
+.advantage-4 i {
+	top: 33px;
+	left: 50px;
+}
+.selected-5 {
+	background: url(../images/advantage_5.png) 0 0 no-repeat;
+}
+.advantage-5 i {
+	top: 37px;
+	left: -37px;
+}
+.selected-6 {
+	background: url(../images/advantage_6.png) 0 0 no-repeat;
+}
+.advantage-6 i {
+	top: 46px;
+	left: 55px;
+}
+.advantage-1 {
+	top: 0;
+	left: 24px;
+	width: 80px;
+	height: 64px;
+	position: absolute;
+	display: block;
+}
+.advantage-2 {
+	top: 0;
+	left: 105px;
+	width: 80px;
+	height: 64px;
+	position: absolute;
+	display: block;
+}
+.advantage-3 {
+	top: 60px;
+	left: 0;
+	width: 50px;
+	height: 82px;
+	position: absolute;
+	display: block;
+}
+.advantage-4 {
+	top: 60px;
+	left: 155px;
+	width: 50px;
+	height: 82px;
+	position: absolute;
+	display: block;
+}
+.advantage-5 {
+	top: 141px;
+	left: 23px;
+	width: 80px;
+	height: 64px;
+	position: absolute;
+	display: block;
+}
+.advantage-6 {
+	top: 141px;
+	left: 105px;
+	width: 80px;
+	height: 64px;
+	position: absolute;
+	display: block;
+}
+.advantage-list h2 {
+	height: 28px;
+	margin-top: 28px;
+	padding-left: 60px;
+	line-height: 28px;
+	font-size: 16px;
+	color: #ffff33;
+	position: relative;
+}
+.advantage-list h2 i {
+	top: 0;
+	left: 30px;
+	width: 26px;
+	height: 28px;
+	background-image: url(../images/advantage_num.png);
+	background-repeat: no-repeat;
+	line-height: 0;
+	font-size: 0;
+	position: absolute;
+}
+.advantage-list h3 {
+	margin-top: 8px;
+	padding-left: 5px;
+}
+.advantage-list .line {
+	top: 57px;
+	width: 200px;
+	height: 2px;
+	background: #f78401;
+	display: none;
+	position: absolute;
+}
+.advantage-box-1 .line,
+.advantage-box-3 .line,
+.advantage-box-5 .line {
+	right: -17px;
+}
+.advantage-box-2 .line,
+.advantage-box-4 .line,
+.advantage-box-6 .line {
+	left: -16px;
+}
+.advantage-box-1 {
+	top: 35px;
+	left: 30px;
+	width: 233px;
+	height: 106px;
+	position: absolute;
+}
+.advantage-box-1 h2 i {
+	background-position: 0 0;
+}
+.advantage-box-1 h2 i.selected {
+	background-position: 0 -30px;
+}
+.advantage-box-2 {
+	top: 33px;
+	left: 530px;
+	width: 233px;
+	height: 106px;
+	position: absolute;
+}
+.advantage-box-2 h2 i {
+	background-position: -35px 0;
+}
+.advantage-box-2 h2 i.selected {
+	background-position: -35px -30px;
+}
+.advantage-box-3 {
+	top: 146px;
+	left: 30px;
+	width: 233px;
+	height: 106px;
+	position: absolute;
+}
+.advantage-box-3 h2 i {
+	background-position: -70px 0;
+}
+.advantage-box-3 h2 i.selected {
+	background-position: -70px -30px;
+}
+.advantage-box-4 {
+	top: 147px;
+	left: 530px;
+	width: 233px;
+	height: 106px;
+	position: absolute;
+}
+.advantage-box-4 h2 i {
+	background-position: -105px 0;
+}
+.advantage-box-4 h2 i.selected {
+	background-position: -105px -30px;
+}
+.advantage-box-5 {
+	top: 267px;
+	left: 30px;
+	width: 233px;
+	height: 106px;
+	position: absolute;
+}
+.advantage-box-5 h2 i {
+	background-position: -140px 0;
+}
+.advantage-box-5 h2 i.selected {
+	background-position: -140px -30px;
+}
+.advantage-box-6 {
+	top: 276px;
+	left: 530px;
+	width: 233px;
+	height: 106px;
+	position: absolute;
+}
+.advantage-box-6 h2 i {
+	background-position: -175px 0;
+}
+.advantage-box-6 h2 i.selected {
+	background-position: -175px -30px;
+}
+.advantage-list .advantage-selected {
+	background: url(../images/advantage_frame.png) center 0 no-repeat;
+}
+.experience-btn {
+	bottom: 0;
+	left: 347px;
+	width: 95px;
+	height: 32px;
+	background: url(../images/experience_btn.png) 0 0 no-repeat;
+	line-height: 0;
+	font-size: 0;
+	display: block;
+	position: absolute;
+}
+/*---- setp-4 css end ----*/
+
+/*---- setp-5 css start ----*/
+
+.contact-title {
+	height: 70px;
+	margin-top: 50px;
+	background: url(../images/contact_title.png) center 0 no-repeat;
+}
+.contact-content {
+	padding: 0 65px;
+}
+.contact-content .fl {
+	width: 194px;
+	height: 319px;
+	background: url(../images/contact_info.png) 0 0 no-repeat;
+	line-height: 0;
+	font-size: 0;
+	position: relative;
+}
+.contact-content .fl img {
+	top: 125px;
+	left: 23px;
+	position: absolute;
+}
+.contact-content .fr {
+	width: 421px;
+}
+.qq {
+	height: 26px;
+	margin: 16px auto;
+	font-size: 0;
+}
+.qq span {
+	float: left;
+	height: 26px;
+	margin-right: 12px;
+	line-height: 26px;
+	font-size: 14px;
+	color: #666;
+	display: block;
+}
+.qq a {
+	float: left;
+	width: 26px;
+	margin-right: 3px;
+	height: 26px;
+	display: block;
+}
+.about-us {
+	margin-top: 30px;
+	color: #666;
+}
+.about-us h2 {
+	font-size: 20px;
+}
+.about-us p {
+	margin-top: 10px;
+	line-height: 25px;
+	text-indent: 2em;
+}
+/*---- setp-5 css end ----*/

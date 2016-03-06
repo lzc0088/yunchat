@@ -1,0 +1,253 @@
+.top{
+    width:100%;
+    height:60px;
+    background:url(../images/login_t.jpg) repeat-x 0 0;
+    border-bottom:solid 1px #c3c3c3}.main-content{width:100%;
+    background:url(../images/login_yun.jpg) repeat-x 0 0;
+    height:600px}.main1000{width:1000px;margin:0 auto;
+    position:relative
+}
+.phone{
+    position:absolute
+}
+.txt1{
+    position:absolute;
+    top:40px;
+    display:none
+}
+.login{
+    width:326px;
+    height:333px;
+    background-color:#fff;
+    border:solid 1px #82c9e5;
+    position:absolute;
+    right:60px;
+    top:120px;
+}
+.login .top{
+    height:35px;
+    width:323px;
+    margin:1px;
+    border:none;
+    box-shadow: 0px 2px 2px #ccc;
+    background:url(../images/login_top_bg.jpg) repeat-x;
+}
+.login ul{
+    height:35px;
+    width:323px;
+    list-style-type:none;
+    list-style-position:inside;
+}
+.login ul li{
+    float:left;
+    width:auto;
+    height:35px;
+    background:url(../images/login_top_line.jpg) no-repeat right;
+}
+.login ul li a{
+    display:block;
+    width:93px;
+    height:35px;
+    text-align:left;
+    line-height:38px;
+    color:#fff;
+    text-decoration:none;
+    font-size:15px;
+    cursor:pointer;
+}
+.login ul li a img{
+    float:left;
+    border:none;
+    margin-top:5px;
+    margin-left:16px;
+    margin-right:10px;
+}
+.logo{
+    background:#0d93d6;
+    margin-right:2px;
+    width:90px;
+}
+.login p{
+    height:40px;
+    width:308px;
+    margin-top:10px;
+    margin-bottom:10px;
+    padding-left:15px;
+    line-height:40px;
+    color:#999;
+}
+.login p img{
+    float:left;
+    margin-right:15px;
+    margin-top:10px;
+}
+.login dl{
+    height:32px;
+    width:308px;
+    padding-left:15px;
+    font-size:14px;
+    color:#666;
+}
+.login dt{
+    float:left;
+    width:75px;
+    height:32px;
+    line-height:32px;
+    margin-right:10px;
+}
+.login dd{
+    float:left;
+    width:213px;
+    height:32px;
+    margin-bottom:10px;
+}
+.login input.text{
+    display:block;
+    float:left;
+    width:191px;
+    height:25px;
+    padding-left:5px;
+    margin-top:1px;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border-radius:5px;
+    background:#fff;
+    border:1px solid #ccc;
+}
+.login input.buttom{
+    display:block;
+    width:292px;
+    height:40px;
+    border:none;
+    margin:10px 16px;
+    cursor:pointer;
+    float:left;
+    color:#fff;
+    font-size:18px;
+    background:url(../images/login_buttom.png);
+}
+
+.news li .products-desc{
+    display:block;
+    float:left;
+    margin-left:22px;
+    margin-top:15px;
+    width:375px
+}.news{
+    position:relative;
+    top:550px
+}
+.news li{
+    float:left;
+    width:135px;
+    height:135px;
+    margin-right:18px;
+    overflow:hidden;
+    position:relative
+}.news li a{
+    width:135px;
+    height:135px;
+    display:block;
+    background:url(../images/g.jpg) no-repeat
+}
+.news li .d1{
+    background-position:0 -135px
+}
+.news li .d2{
+    background-position:0 -270px
+}
+.news li .d3{
+    background-position:0 0
+}
+.news li .d1:hover{
+    background-position:-135px -135px
+}
+.news li .d2:hover{
+    background-position:-135px -270px
+}
+.news li .d3:hover{
+    background-position:-135px 0
+}
+.inner{
+    float:left
+}
+.title{
+    font-size:24px;
+    font-weight:normal
+}
+.desc{
+    color:#666;
+    line-height:21px;
+    margin-top:5px
+}
+.w545{
+    width:545px
+}
+.gr{
+    width:135px;
+    height:135px;
+    background:url(../images/g.jpg) no-repeat 0 bottom;
+    position:absolute;right:0
+}
+.foot{
+    width:1000px;
+    text-align:center;
+    position:relative;
+    top:650px;
+    color:#666
+}
+.bg50{
+    background-color:#FFF;
+    filter:alpha(opacity=50);
+    -moz-opacity:.5;
+    -khtml-opacity:.5;
+    opacity:.5;
+    position:absolute;
+    left:0;top:50px;
+    width:1000px;
+    height:600px
+}
+.reg_index{
+    background-color:#fff;
+    width:940px;
+    position:absolute;
+    left:10px;
+    top:60px;
+    height:500px;
+    padding:60px 20px 0 20px
+}
+.reg_index p{
+    overflow:hidden;
+    margin-bottom:20px;
+    margin-left:50px
+}
+.reg_index label{
+    float:left;
+    line-height:45px;
+    text-align:right;
+    width:88px
+}
+.reg_index input{
+    float:left;
+    width:220px;
+    height:45px;
+    margin-left:25px;
+    background:url(../images/reg_txt.jpg) no-repeat 0 0;
+    border:0;
+    border:solid 1px #FFF
+}
+.reg_index span{
+    float:left;
+    margin-left:10px;
+    line-height:45px;
+    color:#666
+}
+.reg_index .reg_tj{
+    width:372px;
+    height:50px;
+    background:url(../images/reg_zhuce.jpg) no-repeat 0 0;
+    border:0;
+    _border:solid 1px #FFF;
+    cursor:pointer;
+    margin-left:165px
+}

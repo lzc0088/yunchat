@@ -1,0 +1,272 @@
+/*----- css reset start ----- */
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p,
+blockquote,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+pre,
+form,
+fieldset,
+legend,
+button,
+input,
+textarea,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+body,
+button,
+input,
+select,
+textarea {
+  font: 12px/1.5'Microsoft Yahei', tahoma, arial, '\5b8b\4f53', sans-serif;
+}
+body {
+  font-size: 12px;
+  font-family: 'Microsoft Yahei', tahoma, arial, '\5b8b\4f53', sans-serif;
+  color: #fff;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  border: 0;
+  font-size: 100%;
+  font-weight: normal;
+}
+em {
+  font-style: normal;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+fieldset,
+img {
+  border: 0;
+}
+img {
+  display: block;
+}
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+}
+strong,
+i {
+  font-style: normal;
+  font-weight: normal;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/*----- css reset end----- */
+
+/*----- css common start ----- */
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.clearfix {
+  *zoom: 1;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+/*----- css common end----- */
+
+/*----- css header-box start ----- */
+
+#herder {
+  width: auto;
+  height: 53px;
+  margin-bottom: 30px;
+  background-image: url(../images/Nav_bg.png);
+  background-repeat: repeat-x;
+}
+#top {
+  width: 1210px;
+  height: 55px;
+  margin: 0px auto;
+  padding: 0px;
+}
+#top img {
+  border: 0px;
+  float: left;
+  margin: 11px 40px 11px 10px;
+}
+#top a {
+  width: auto;
+  float: left;
+  color: #eee;
+  height: 25px;
+  padding: 14px 24px;
+  line-height: 25px;
+  font-size: 16px;
+  background-image: url(../images/Nav_Line.png);
+  background-repeat: no-repeat;
+  background-position: left;
+}
+#top a:hover {
+  color: #fff;
+  background: #242424;
+  background-image: url(../images/Nav_Line.png);
+  background-repeat: no-repeat;
+  background-position: left;
+}
+.title-a{
+  color: #fff;
+  background: #242424;
+  background-image: url(../images/Nav_Line.png);
+  background-repeat: no-repeat;
+  background-position: left;
+}
+#top a.line {
+  background-image: url(../images/Nav_Line.png);
+  background-repeat: no-repeat;
+  width: 2px;
+  height: 51px;
+  padding: 0px;
+}
+#top a.a {
+  display: block;
+  width: 135px;
+  height: 30px;
+  color: #E9E9E9;
+  float: right;
+  margin: 12px 15px 12px 0px;
+  text-align: center;
+  line-height: 30px;
+  background: #474646;
+  padding: 0px;
+  border: 1px solid #242424;
+}
+#top a.a1 {
+  background: #999;
+  color: #333;
+  display: none;
+  width: 135px;
+  height: 30px;
+  float: right;
+  margin: 12px 15px 12px 0px;
+  text-align: center;
+  line-height: 30px;
+  padding: 0px;
+  border: 1px solid #242424;
+}
+#top a span {
+  color: #da3610;
+  font-weight: bold;
+}
+#nav {
+  width: 1210px;
+  height: 75px;
+  margin: 0px auto;
+  font-size: 12px;
+  background: #e1e1e1;
+  border-bottom: #da3610 5px solid;
+}
+#nav img {
+  float: left;
+  margin: 12px 10px;
+  border: #ccc 1px solid;
+}
+#nav ul.ul {
+  width: 185px;
+  height: 39px;
+  float: left;
+  padding: 18px 0px;
+  background-image: none;
+}
+#nav ul.ul li {
+  width: 100%;
+  height: 20px;
+  color: #000;
+  padding: 0px;
+  text-align: left;
+  line-height: 20px;
+}
+#nav ul.ul li strong {
+  display: block;
+  width: auto;
+  float: left;
+  margin-right: 5px;
+}
+#nav ul.ul li img {
+  margin: 0px;
+  padding: 0px;
+}
+#nav ul.ul2 {
+  width: 238px;
+  height: 49px;
+  float: left;
+  padding: 13px 0px;
+  background-image: none;
+}
+#nav ul.ul2 li {
+  color: #000;
+  width: 77%;
+  height: 25px;
+  text-align: left;
+  text-indent: 4.5%;
+  line-height: 25px;
+}
+#nav ul {
+  width: 238px;
+  height: 49px;
+  float: left;
+  padding: 13px 0px;
+  background-repeat: no-repeat;
+  background-position: 1px 0px right;
+  background-image: url(../images/nav-Line.png);
+}
+#nav ul li {
+  color: #000;
+  width: 77%;
+  height: 25px;
+  text-align: left;
+  padding-left: 56px;
+  line-height: 25px;
+}
+#Frame {
+  overflow: hidden;
+  width: 1210px;
+  background: #e1e1e1 url(../images/menu_bg.png) -3px 0px repeat-y;
+  margin: 0px auto;
+  clear: both;
+}
+/*----- css header-box end----- */

@@ -1,0 +1,63 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>{uuuyi:$tpl.wxname}</title>
+        <base href="." />
+        <meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no;" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <meta name="format-detection" content="telephone=no" />
+        <link href="{uuuyi::RES}/css/allcss/cate{uuuyi:$tpl.tpltypeid}_{uuuyi:$tpl.color_id}.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="{uuuyi::RES}/css/flash/css/plugmenu.css">
+    </head>
+
+    <body id="cate16">
+        <div class="mainbg">
+                <img src="<if condition="$homeInfo.homeurl neq false">{uuuyi:$homeInfo.homeurl}<else/>{uuuyi::RES}/images/themes/bg1.jpg</if> "/>
+        </div>
+        <div id="insert1"></div>
+        <div class="mainmenu">
+            <ul>
+                <volist name="info" id="vo">
+                    <li>
+                        <div class="menubtn"><a href="<if condition="$vo['url'] eq ''">{uuuyi::U('Wap/Index/lists',array('classid'=>$vo['id'],'token'=>$vo['token']))}<else/>{uuuyi:$vo.url|htmlspecialchars_decode}</if>">
+                                <div class="menuimg"><img src="{uuuyi:$vo.img}"></div>
+                                <div class="menutitle">{uuuyi:$vo.name}</div></a>
+                        </div>
+
+                    </li>
+                </volist>
+
+                <div class="clr"></div>
+
+
+            </ul>
+        </div>
+
+        <div id="insert2"></div>
+
+        <div style="display:none"> </div>
+
+
+<if condition="$showPlugMenu">
+<div class="plug-div">
+        <div class="plug-phone">
+            <div class="plug-menu themeStyle" style="background:{uuuyi:$homeInfo.plugmenucolor}"><span class="close"></span></div> 
+               <volist name="plugmenus" id="vo">
+                        <div class="themeStyle plug-btn plug-btn{uuuyi:$i} close" style="background:{uuuyi:$homeInfo.plugmenucolor}">
+							<a  href="{uuuyi:$vo.url}">
+								<span style="background-image: url({uuuyi::RES}/css/flash/images/img/{uuuyi:$vo.name}.png);" ></span>
+							</a>
+						</div>
+                      </volist>   
+<div class="plug-btn plug-btn5 close"></div>
+                    </div>
+</div>
+</if>
+<script src="{uuuyi::RES}/css/flash/js/zepto.min.js" type="text/javascript"></script>
+<script src="{uuuyi::RES}/css/flash/js/plugmenu.js" type="text/javascript"></script>
+  <div class="copyright">
+<if condition="$iscopyright eq 1">
+{uuuyi:$homeInfo.copyright}
+<else/>
+{uuuyi:$siteCopyright}
+</if>
+</div>   </body></html>
